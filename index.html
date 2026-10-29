@@ -95,6 +95,32 @@ section{position:relative;z-index:1;padding:80px 24px;}
 .service-name.gold{color:var(--purple);}
 .service-desc{font-size:13px;color:var(--muted);line-height:1.75;}
 
+
+/* NEW OFFERINGS */
+#new-offerings{--gold-real:#e2b455;--gold-soft:rgba(226,180,85,0.12);--gold-line:rgba(226,180,85,0.38);}
+.no-head{text-align:center;}
+.no-badge{display:inline-block;font-family:"Cinzel",serif;font-size:10px;letter-spacing:0.28em;color:#080510;background:linear-gradient(90deg,#f5d58a,var(--gold-real));border-radius:999px;padding:6px 16px;margin-bottom:16px;}
+.no-topics{display:flex;flex-wrap:nowrap;justify-content:center;gap:8px;margin:0 auto 34px;max-width:920px;}
+.no-topics-wrap{text-align:center;}
+.no-topics-label{text-align:center;font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:var(--muted);margin-bottom:4px;}
+.no-chip{font-size:12px;padding:7px 12px;white-space:nowrap;border-radius:999px;border:0.5px solid var(--gold-line);color:var(--gold-real);background:var(--gold-soft);}
+.no-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:0.5px solid var(--gold-line);border-radius:20px;overflow:hidden;background:linear-gradient(180deg,rgba(226,180,85,0.05),rgba(15,11,30,0.9));}
+.no-item{padding:30px 24px;display:flex;flex-direction:column;gap:12px;border-right:0.5px solid var(--gold-line);}
+.no-item:last-child{border-right:none;}
+.no-item.hl{background:rgba(226,180,85,0.07);}
+.no-icon{width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:24px;background:var(--gold-soft);border:0.5px solid var(--gold-line);}
+.no-name{font-family:"Cinzel",serif;font-size:17px;color:var(--txt);line-height:1.3;}
+.no-price{font-family:"Cormorant Garamond",serif;font-size:42px;font-weight:300;color:var(--gold-real);line-height:1;}
+.no-price small{font-size:16px;color:var(--muted);font-family:"DM Sans",sans-serif;}
+.no-desc{font-size:13px;color:var(--muted);line-height:1.7;}
+.no-list{list-style:none;display:flex;flex-direction:column;gap:8px;flex:1;}
+.no-list li{font-size:13px;color:var(--txt);padding-left:22px;position:relative;line-height:1.5;}
+.no-list li::before{content:"✦";position:absolute;left:0;color:var(--gold-real);font-size:12px;}
+.no-btn{display:block;text-align:center;font-family:"Cinzel",serif;font-size:11px;letter-spacing:0.12em;background:transparent;color:var(--gold-real);border:1px solid var(--gold-real);border-radius:999px;padding:13px 18px;text-decoration:none;transition:background 0.2s,color 0.2s;margin-top:6px;}
+.no-btn:hover,.no-item.hl .no-btn{background:var(--gold-real);color:#080510;}
+.no-note{text-align:center;font-family:"Cormorant Garamond",serif;font-style:italic;font-size:17px;color:var(--purple);margin-top:26px;}
+@media(max-width:760px){.no-topics{flex-wrap:wrap;}.no-grid{grid-template-columns:1fr;}.no-item{border-right:none;border-bottom:0.5px solid var(--gold-line);}.no-item:last-child{border-bottom:none;}}
+
 /* READINGS */
 .readings-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:18px;}
 .reading-card{background:var(--bg2);border:0.5px solid var(--bord);border-radius:var(--radius);padding:26px 22px;display:flex;flex-direction:column;gap:10px;transition:border-color 0.3s,transform 0.3s;position:relative;overflow:hidden;}
@@ -371,6 +397,73 @@ footer{position:relative;z-index:1;border-top:0.5px solid var(--pink-border);pad
 <div class="divider"><div class="divider-line dl-pink"></div><div class="divider-sym">✨</div><div class="divider-line dl-gold"></div></div>
 
 
+<!-- NEW OFFERINGS -->
+<section id="new-offerings">
+  <div class="section-inner">
+    <div class="no-head">
+      <div class="no-badge">NEW OFFERINGS</div>
+      <h2 class="section-title">Get Your Reading Your Way</h2>
+      <div class="section-sub" style="color:var(--green);">Real answers, on your own time. No live session needed.</div>
+    </div>
+    <div class="no-topics-label">Choose your focus</div>
+    <div class="no-topics">
+      <span class="no-chip">💗 Love &amp; Relationships</span>
+      <span class="no-chip">💰 Money &amp; Career</span>
+      <span class="no-chip">🔮 Spiritual Journey</span>
+      <span class="no-chip">🌑 Shadow Work</span>
+      <span class="no-chip">✨ Manifestation Focus</span>
+    </div>
+    <div class="no-grid">
+
+      <div class="no-item">
+        <div class="no-icon">🕊️</div>
+        <div class="no-name">Monthly Mentorship Message</div>
+        <div class="no-price">$111</div>
+        <div class="no-desc">A focused message to keep you aligned and moving forward. Your first step toward mentorship with Ju.</div>
+        <ul class="no-list">
+          <li>One topic of your choice</li>
+          <li>Sent straight to your inbox</li>
+          <li>Come back each month for a new focus</li>
+          <li>A bridge into Ju's mentorship</li>
+        </ul>
+        <a class="no-btn" href="#" target="_blank">Get My Message ✨</a>
+      </div>
+
+      <div class="no-item hl">
+        <div class="no-icon">💌</div>
+        <div class="no-name">Email Reading</div>
+        <div class="no-price">$222</div>
+        <div class="no-desc">A personal written document outlining everything that came up in your reading. Yours to keep and reread anytime.</div>
+        <ul class="no-list">
+          <li>2 questions on your focus</li>
+          <li>Your messages and what they mean for you</li>
+          <li>Guidance to move forward</li>
+          <li>Delivered in 5 to 7 days</li>
+        </ul>
+        <a class="no-btn" href="#" target="_blank">Get My Email Reading ✨</a>
+      </div>
+
+      <div class="no-item">
+        <div class="no-icon">🎧</div>
+        <div class="no-name">Voice Note Reading</div>
+        <div class="no-price">$333</div>
+        <div class="no-desc">Hear your full reading in Ju's own voice. Listen and replay it anytime you need clarity.</div>
+        <ul class="no-list">
+          <li>Up to 3 questions on your focus</li>
+          <li>Private audio recording, just for you</li>
+          <li>Sent to you by private link</li>
+          <li>Delivered in 5 to 7 days</li>
+        </ul>
+        <a class="no-btn" href="#" target="_blank">Get My Voice Reading ✨</a>
+      </div>
+
+    </div>
+    <div class="no-note">Want to see Ju live? Live reading sessions are below.</div>
+  </div>
+</section>
+
+<div class="divider"><div class="divider-line dl-gold"></div><div class="divider-sym">✨</div><div class="divider-line dl-purple"></div></div>
+
 <!-- READINGS -->
 <section id="readings">
   <div class="section-inner">
@@ -413,24 +506,6 @@ footer{position:relative;z-index:1;border-top:0.5px solid var(--pink-border);pad
         <div class="reading-price">$666.66</div>
         <div class="reading-desc">A powerful and emotional session of healing and clarity for parents who have experienced pregnancy loss. Ju guides you through a sacred ceremony to connect with your baby's energy, check in with them, name them if they were not named, and safely release them to the spirit realm.</div>
         <a class="reading-btn" href="https://square.link/u/57AapPI9" target="_blank">Book This Reading ✨</a>
-      </div>
-
-      <div class="reading-card">
-        <div class="reading-icon">🎧</div>
-        <div class="reading-name">Voice Note Reading</div>
-        <div class="reading-tag">Private Audio Recording</div>
-        <div class="reading-price">$444</div>
-        <div class="reading-desc">Can't make a live session? Ju prays, pulls your cards, and records your full reading just for you. You receive a private audio recording by Google Drive link, plus a written summary of your cards and messages. Up to 3 questions. Delivered within 5 to 7 days.</div>
-        <a class="reading-btn" href="#" target="_blank">Book This Reading ✨</a>
-      </div>
-
-      <div class="reading-card">
-        <div class="reading-icon">💌</div>
-        <div class="reading-name">Email Reading</div>
-        <div class="reading-tag">Written Reading</div>
-        <div class="reading-price">$222</div>
-        <div class="reading-desc">A personal written reading sent straight to your inbox. Ju prays, pulls your cards, and types up what came through: the cards you pulled, what they mean for you, and the guidance from your spirit team. Up to 3 questions. Delivered within 5 to 7 days.</div>
-        <a class="reading-btn" href="#" target="_blank">Book This Reading ✨</a>
       </div>
 
     </div>
