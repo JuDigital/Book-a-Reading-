@@ -118,7 +118,12 @@ section{position:relative;z-index:1;padding:80px 24px;}
 .no-list li::before{content:"✦";position:absolute;left:0;color:var(--gold-real);font-size:12px;}
 .no-btn{display:block;text-align:center;font-family:"Cinzel",serif;font-size:11px;letter-spacing:0.12em;background:transparent;color:var(--gold-real);border:1px solid var(--gold-real);border-radius:999px;padding:13px 18px;text-decoration:none;transition:background 0.2s,color 0.2s;margin-top:6px;}
 .no-btn:hover,.no-item.hl .no-btn{background:var(--gold-real);color:#080510;}
-.no-note{text-align:center;font-family:"Cormorant Garamond",serif;font-style:italic;font-size:17px;color:var(--purple);margin-top:26px;}
+.no-note{text-align:center;margin-top:40px;}
+.no-note-title{font-family:"Cinzel",serif;font-size:clamp(20px,3.2vw,28px);font-weight:600;color:#fff;margin-bottom:8px;}
+.no-note-sub{font-size:16px;color:#fff;line-height:1.6;margin-bottom:18px;}
+.no-note-btn{display:inline-block;font-family:"Cinzel",serif;font-size:12px;letter-spacing:0.12em;color:#fff;text-decoration:none;border:1px solid rgba(255,255,255,0.6);border-radius:999px;padding:12px 26px;}
+.no-note-btn:hover{background:rgba(255,255,255,0.1);}
+#new-offerings,#readings{scroll-margin-top:70px;}
 @media(max-width:760px){.no-topics{flex-wrap:wrap;}.no-grid{grid-template-columns:1fr;}.no-item{border-right:none;border-bottom:0.5px solid var(--gold-line);}.no-item:last-child{border-bottom:none;}}
 
 /* READINGS */
@@ -458,7 +463,11 @@ footer{position:relative;z-index:1;border-top:0.5px solid var(--pink-border);pad
       </div>
 
     </div>
-    <div class="no-note">Want to see Ju live? Live reading sessions are below.</div>
+    <div class="no-note">
+      <div class="no-note-title">Want the Full Experience?</div>
+      <div class="no-note-sub">Book a live reading session with Ju, on camera, and watch your cards pulled in real time.</div>
+      <a class="no-note-btn" href="#readings">See Live Readings ↓</a>
+    </div>
   </div>
 </section>
 
@@ -722,6 +731,10 @@ function retake(){
 }
 
 renderQ();
+</script>
+<script>
+/* Re-scroll to the linked section once everything has loaded, so links like #new-offerings land in the right place */
+window.addEventListener("load",function(){if(location.hash){var el=document.querySelector(location.hash);if(el)el.scrollIntoView();}});
 </script>
 </body>
 </html>
