@@ -416,14 +416,14 @@ footer{position:relative;z-index:1;border-top:0.5px solid var(--pink-border);pad
     <div class="no-grid">
 
       <div class="no-item">
-        <div class="no-icon">🕊️</div>
+        <div class="no-icon">📲</div>
         <div class="no-name">Monthly Mentorship Message</div>
         <div class="no-price">$111</div>
-        <div class="no-desc">A focused message to keep you aligned and moving forward. Your first step toward mentorship with Ju.</div>
+        <div class="no-desc">A one page written document answering one question on the focus of your choice. Your first step toward mentorship with Ju.</div>
         <ul class="no-list">
-          <li>One topic of your choice</li>
-          <li>Sent straight to your inbox</li>
-          <li>Come back each month for a new focus</li>
+          <li>One page written document</li>
+          <li>1 question on your focus</li>
+          <li>Sent straight to your inbox in 5 to 7 days</li>
           <li>A bridge into Ju's mentorship</li>
         </ul>
         <a class="no-btn" href="https://square.link/u/57G2zPD5" target="_blank">Get My Message ✨</a>
@@ -472,6 +472,15 @@ footer{position:relative;z-index:1;border-top:0.5px solid var(--pink-border);pad
     <div class="section-sub" style="color:var(--green);">Helping you turn spiritual insight into real change.</div>
     <div class="readings-grid">
 
+      <div class="reading-card featured">
+        <div class="reading-icon">🔮</div>
+        <div class="reading-name">Deep Dive Session</div>
+        <div class="reading-tag">Up to 7 Questions</div>
+        <div class="reading-price">$777.77</div>
+        <div class="reading-desc">Choose up to 3 areas of your life to focus on. Self love, spiritual gifts, relationships, family, finances, protection, or business goals. Deeply detailed answers across multiple areas of your life in one powerful session.</div>
+        <a class="reading-btn" href="https://checkout.square.site/merchant/ML0KY7FM10XKY/checkout/WRMDMQ54VW67XBEKAX4NWJAN" target="_blank">Book This Reading ✨</a>
+      </div>
+
       <div class="reading-card">
         <div class="reading-icon">🕯️</div>
         <div class="reading-name">Mediumship Reading</div>
@@ -479,15 +488,6 @@ footer{position:relative;z-index:1;border-top:0.5px solid var(--pink-border);pad
         <div class="reading-price">$888.88</div>
         <div class="reading-desc">Tap into the energy of your spirit team and your ancestors. Uncover messages from the other side. You may ask 3 to 5 questions. This session connects you with those who have crossed over to bring you divine guidance.</div>
         <a class="reading-btn" href="https://checkout.square.site/merchant/ML0KY7FM10XKY/checkout/O4T5IC6ZHUXF7LJQLCEQJFY7" target="_blank">Book This Reading ✨</a>
-      </div>
-
-      <div class="reading-card featured">
-        <div class="reading-icon">🔮</div>
-        <div class="reading-name">Deep Dive Session</div>
-        <div class="reading-tag">Up to 7 Questions</div>
-        <div class="reading-price">$777.77</div>
-        <div class="reading-desc">Choose 1 to 3 areas of your life to focus on. Self love, spiritual gifts, relationships, family, finances, protection, or business goals. Deeply detailed answers across multiple areas of your life in one powerful session.</div>
-        <a class="reading-btn" href="https://checkout.square.site/merchant/ML0KY7FM10XKY/checkout/WRMDMQ54VW67XBEKAX4NWJAN" target="_blank">Book This Reading ✨</a>
       </div>
 
       <div class="reading-card">
@@ -499,14 +499,6 @@ footer{position:relative;z-index:1;border-top:0.5px solid var(--pink-border);pad
         <a class="reading-btn" href="https://checkout.square.site/merchant/ML0KY7FM10XKY/checkout/K6HAHECSN545OOTZDC6QY6C7" target="_blank">Book This Reading ✨</a>
       </div>
 
-      <div class="reading-card">
-        <div class="reading-icon">🤍</div>
-        <div class="reading-name">Miscarriage Mediumship</div>
-        <div class="reading-tag">Specialty Reading</div>
-        <div class="reading-price">$666.66</div>
-        <div class="reading-desc">A powerful and emotional session of healing and clarity for parents who have experienced pregnancy loss. Ju guides you through a sacred ceremony to connect with your baby's energy, check in with them, name them if they were not named, and safely release them to the spirit realm.</div>
-        <a class="reading-btn" href="https://square.link/u/57AapPI9" target="_blank">Book This Reading ✨</a>
-      </div>
 
     </div>
   </div>
@@ -660,13 +652,6 @@ var RESULTS = [
     body:"A Past Life Regression Reading with Ju uncovers exactly who you were and how that life is echoing into this one. This is the reading for people who feel like something has always been off and they cannot explain why.",
     cta:"Book Your Past Life Reading ✨",
     link:"https://checkout.square.site/merchant/ML0KY7FM10XKY/checkout/K6HAHECSN545OOTZDC6QY6C7"
-  },
-  {
-    icon:"🤍", title:"You Are Ready for Sacred Healing",
-    desc:"What you are carrying deserves to be witnessed and released with intention.",
-    body:"The Miscarriage Mediumship Reading is one of Ju's most sacred sessions. It is a ceremony of healing and connection for parents who have experienced pregnancy loss. Your baby's energy is still present and this session gives you both the gift of peace.",
-    cta:"Book Your Healing Session ✨",
-    link:"https://square.link/u/57AapPI9"
   }
 ];
 
@@ -674,7 +659,7 @@ var answers = [], current = 0;
 
 function getResult(){
   var q3 = answers[3];
-  if(q3===2) return RESULTS[3];
+  if(q3===2) return RESULTS[1];
   var q4 = answers[4];
   if(q4===1) return RESULTS[1];
   var q0 = answers[0];
